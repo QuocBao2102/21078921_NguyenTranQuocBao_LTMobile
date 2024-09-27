@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Data 1
+        let massMark1 = 78;
+        let heightMark1 = 1.69;
+        let massJohn1 = 92;
+        let heightJohn1 = 1.95;
+
+        // Data 2
+        let massMark2 = 95;
+        let heightMark2 = 1.88;
+        let massJohn2 = 85;
+        let heightJohn2 = 1.76;
+
+        // BMI data 1
+        let BMIMark1 = massMark1 / (heightMark1 ** 2);
+        let BMIJohn1 = massJohn1 / (heightJohn1 ** 2);
+
+        // BMI data 2
+        let BMIMark2 = massMark2 / (heightMark2 ** 2);
+        let BMIJohn2 = massJohn2 / (heightJohn2 ** 2);
+
+        // variable "markHigherBMI"
+        let markHigherBMI1 = BMIMark1 > BMIJohn1;
+        let markHigherBMI2 = BMIMark2 > BMIJohn2;
+        // print the result
+        console.log(`Data 1: Mark's BMI is ${BMIMark1.toFixed(2)}, John's BMI is ${BMIJohn1.toFixed(2)}, Mark has higher BMI: ${markHigherBMI1}`);
+        console.log(`Data 2: Mark's BMI is ${BMIMark2.toFixed(2)}, John's BMI is ${BMIJohn2.toFixed(2)}, Mark has higher BMI: ${markHigherBMI2}`);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

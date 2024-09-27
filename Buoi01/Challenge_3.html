@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //task1
+    //data 1
+    let dolphinsScores1 = [96, 108, 89];
+    let koalasScores1 = [88, 91, 110];
+
+    let dolphinsScores2 = [97, 112, 101];
+    let koalasScores2 = [109, 95, 123];
+
+    let dolphinsScores3 = [97, 112, 101];
+    let koalasScores3 = [109, 95, 106];
+
+
+
+    function calculateAverage(scores) {
+        let sum = 0;
+        for (let i = 0; i < scores.length; i++) {
+            sum += scores[i];
+        }
+        return sum / scores.length;
+    }
+    let dolphinsAverage1 = calculateAverage(dolphinsScores1);
+    let koalasAverage1 = calculateAverage(koalasScores1);
+
+
+    //print the result
+    console.log(`Data 1: Dolphins' average score is ${dolphinsAverage1}`);
+    console.log(`Data 1: Koalas' average score is ${koalasAverage1}`);
+
+
+
+    //task2
+    if (dolphinsAverage1 > koalasAverage1 && dolphinsAverage1) {
+        console.log(`Data 1: Dolphins win the trophy!`);
+    } else if (dolphinsAverage1 < koalasAverage1 && koalasAverage1) {
+        console.log(`Data 1: Koalas win the trophy!`);
+    } else if (dolphinsAverage1 === koalasAverage1) {
+        console.log(`Data 1: Both win the trophy!`);
+    }
+    //task3
+    if (dolphinsAverage1 > koalasAverage1 && dolphinsAverage1 >= 100) {
+        console.log(`Data 1: Dolphins win the trophy!`);
+    } else if (dolphinsAverage1 < koalasAverage1 && koalasAverage1 >= 100) {
+        console.log(`Data 1: Koalas win the trophy!`);
+    } else if (dolphinsAverage1 === koalasAverage1 && dolphinsAverage1 >= 100 && koalasAverage1 >= 100) {
+        console.log(`Data 1: Both win the trophy!`);
+    } else {
+        console.log(`Data 1: No one wins the trophy!`);
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>
