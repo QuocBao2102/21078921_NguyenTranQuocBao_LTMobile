@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,TextInput, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import React, { useState } from 'react';
-export default function App() {
+const Screen01 = ({ navigation }) => {
   const [passwordVisible, setPasswordVisible] = useState(false);
   return (
     <View style={styles.container}>
@@ -103,3 +103,4 @@ Forgot: {
 
 
 });
+export default Screen01;
